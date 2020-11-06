@@ -51,7 +51,7 @@ function drawNumbers(ctx, radius) {
   ctx.textBaseline="middle";
   ctx.textAlign="center";
   for(num = 1; num < 25; num++){
-    ang = ((num - 14.5) * 2 * Math.PI / 24);
+    ang = ((num - 15) * 2 * Math.PI / 24);
     ctx.rotate(ang);
     ctx.translate(0, -radius*0.85);
     ctx.rotate(-ang);
@@ -68,9 +68,9 @@ function drawTime(ctx, radius){
     var minute = now.getMinutes();
     var second = now.getSeconds();
     //hour
-    hour=((hour-14.5) * 2 * Math.PI/24) +
+    hour=((hour-15) * 2 * Math.PI/24) +
     ((minute)*2*Math.PI/(24*60));
-    drawHand(ctx, hour, radius*0.8, radius*0.03);
+    drawHand(ctx, hour, radius*0.85, radius*0.03);
     //minute
     //minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
     //drawHand(ctx, minute, radius*0.8, radius*0.07);
