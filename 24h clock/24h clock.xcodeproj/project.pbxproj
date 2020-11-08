@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E14022782557E79900C88323 /* _4h_clockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022772557E79900C88323 /* _4h_clockApp.swift */; };
+		E140227A2557E79900C88323 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022792557E79900C88323 /* ContentView.swift */; };
+		E140227C2557E79A00C88323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E140227B2557E79A00C88323 /* Assets.xcassets */; };
+		E140227F2557E79A00C88323 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E140227E2557E79A00C88323 /* Preview Assets.xcassets */; };
+		E140228A2557E79A00C88323 /* _4h_clockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022892557E79A00C88323 /* _4h_clockTests.swift */; };
+		E14022952557E79A00C88323 /* _4h_clockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022942557E79A00C88323 /* _4h_clockUITests.swift */; };
+		E14022AC2557EDA300C88323 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14022AB2557EDA300C88323 /* WidgetKit.framework */; };
+		E14022AE2557EDA300C88323 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14022AD2557EDA300C88323 /* SwiftUI.framework */; };
+		E14022BA2557EDA500C88323 /* ClockywidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E14022A92557EDA300C88323 /* ClockywidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E14022C72557EE5000C88323 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022C62557EE5000C88323 /* ClockView.swift */; };
+		E14022D12557EE5A00C88323 /* Ticks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022D02557EE5A00C88323 /* Ticks.swift */; };
+		E14022D72557EE6000C88323 /* TickText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022D62557EE6000C88323 /* TickText.swift */; };
+		E14022DD2557EE6500C88323 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022DC2557EE6500C88323 /* Hand.swift */; };
+		E14022E32557EE6B00C88323 /* Tickhand.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022E22557EE6B00C88323 /* Tickhand.swift */; };
+		E14022EA2557EE7900C88323 /* Date+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14022E92557EE7900C88323 /* Date+Angle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E14022862557E79A00C88323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E140226C2557E79900C88323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14022732557E79900C88323;
+			remoteInfo = "24h clock";
+		};
+		E14022912557E79A00C88323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E140226C2557E79900C88323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14022732557E79900C88323;
+			remoteInfo = "24h clock";
+		};
+		E14022B82557EDA500C88323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E140226C2557E79900C88323 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14022A82557EDA300C88323;
+			remoteInfo = ClockywidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E14022BE2557EDA500C88323 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E14022BA2557EDA500C88323 /* ClockywidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E14022742557E79900C88323 /* 24h clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "24h clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14022772557E79900C88323 /* _4h_clockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4h_clockApp.swift; sourceTree = "<group>"; };
+		E14022792557E79900C88323 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E140227B2557E79A00C88323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E140227E2557E79A00C88323 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E14022802557E79A00C88323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14022852557E79A00C88323 /* 24h clockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "24h clockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14022892557E79A00C88323 /* _4h_clockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4h_clockTests.swift; sourceTree = "<group>"; };
+		E140228B2557E79A00C88323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14022902557E79A00C88323 /* 24h clockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "24h clockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14022942557E79A00C88323 /* _4h_clockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4h_clockUITests.swift; sourceTree = "<group>"; };
+		E14022962557E79A00C88323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14022A92557EDA300C88323 /* ClockywidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ClockywidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14022AB2557EDA300C88323 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E14022AD2557EDA300C88323 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E14022C62557EE5000C88323 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		E14022D02557EE5A00C88323 /* Ticks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticks.swift; sourceTree = "<group>"; };
+		E14022D62557EE6000C88323 /* TickText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickText.swift; sourceTree = "<group>"; };
+		E14022DC2557EE6500C88323 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		E14022E22557EE6B00C88323 /* Tickhand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tickhand.swift; sourceTree = "<group>"; };
+		E14022E92557EE7900C88323 /* Date+Angle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Angle.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E14022712557E79900C88323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022822557E79A00C88323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140228D2557E79A00C88323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022A62557EDA300C88323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14022AE2557EDA300C88323 /* SwiftUI.framework in Frameworks */,
+				E14022AC2557EDA300C88323 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E140226B2557E79900C88323 = {
+			isa = PBXGroup;
+			children = (
+				E14022762557E79900C88323 /* 24h clock */,
+				E14022882557E79A00C88323 /* 24h clockTests */,
+				E14022932557E79A00C88323 /* 24h clockUITests */,
+				E14022AA2557EDA300C88323 /* Frameworks */,
+				E14022752557E79900C88323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E14022752557E79900C88323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E14022742557E79900C88323 /* 24h clock.app */,
+				E14022852557E79A00C88323 /* 24h clockTests.xctest */,
+				E14022902557E79A00C88323 /* 24h clockUITests.xctest */,
+				E14022A92557EDA300C88323 /* ClockywidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E14022762557E79900C88323 /* 24h clock */ = {
+			isa = PBXGroup;
+			children = (
+				E14022E82557EE7000C88323 /* Utilities */,
+				E14022C52557EE3400C88323 /* Views */,
+				E14022772557E79900C88323 /* _4h_clockApp.swift */,
+				E140227B2557E79A00C88323 /* Assets.xcassets */,
+				E14022802557E79A00C88323 /* Info.plist */,
+				E140227D2557E79A00C88323 /* Preview Content */,
+			);
+			path = "24h clock";
+			sourceTree = "<group>";
+		};
+		E140227D2557E79A00C88323 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E140227E2557E79A00C88323 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E14022882557E79A00C88323 /* 24h clockTests */ = {
+			isa = PBXGroup;
+			children = (
+				E14022892557E79A00C88323 /* _4h_clockTests.swift */,
+				E140228B2557E79A00C88323 /* Info.plist */,
+			);
+			path = "24h clockTests";
+			sourceTree = "<group>";
+		};
+		E14022932557E79A00C88323 /* 24h clockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E14022942557E79A00C88323 /* _4h_clockUITests.swift */,
+				E14022962557E79A00C88323 /* Info.plist */,
+			);
+			path = "24h clockUITests";
+			sourceTree = "<group>";
+		};
+		E14022AA2557EDA300C88323 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E14022AB2557EDA300C88323 /* WidgetKit.framework */,
+				E14022AD2557EDA300C88323 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E14022C52557EE3400C88323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E14022792557E79900C88323 /* ContentView.swift */,
+				E14022C62557EE5000C88323 /* ClockView.swift */,
+				E14022D02557EE5A00C88323 /* Ticks.swift */,
+				E14022D62557EE6000C88323 /* TickText.swift */,
+				E14022DC2557EE6500C88323 /* Hand.swift */,
+				E14022E22557EE6B00C88323 /* Tickhand.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E14022E82557EE7000C88323 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E14022E92557EE7900C88323 /* Date+Angle.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E14022732557E79900C88323 /* 24h clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14022992557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clock" */;
+			buildPhases = (
+				E14022702557E79900C88323 /* Sources */,
+				E14022712557E79900C88323 /* Frameworks */,
+				E14022722557E79900C88323 /* Resources */,
+				E14022BE2557EDA500C88323 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14022B92557EDA500C88323 /* PBXTargetDependency */,
+			);
+			name = "24h clock";
+			productName = "24h clock";
+			productReference = E14022742557E79900C88323 /* 24h clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E14022842557E79A00C88323 /* 24h clockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E140229C2557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clockTests" */;
+			buildPhases = (
+				E14022812557E79A00C88323 /* Sources */,
+				E14022822557E79A00C88323 /* Frameworks */,
+				E14022832557E79A00C88323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14022872557E79A00C88323 /* PBXTargetDependency */,
+			);
+			name = "24h clockTests";
+			productName = "24h clockTests";
+			productReference = E14022852557E79A00C88323 /* 24h clockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E140228F2557E79A00C88323 /* 24h clockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E140229F2557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clockUITests" */;
+			buildPhases = (
+				E140228C2557E79A00C88323 /* Sources */,
+				E140228D2557E79A00C88323 /* Frameworks */,
+				E140228E2557E79A00C88323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14022922557E79A00C88323 /* PBXTargetDependency */,
+			);
+			name = "24h clockUITests";
+			productName = "24h clockUITests";
+			productReference = E14022902557E79A00C88323 /* 24h clockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E14022A82557EDA300C88323 /* ClockywidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14022BB2557EDA500C88323 /* Build configuration list for PBXNativeTarget "ClockywidgetExtension" */;
+			buildPhases = (
+				E14022A52557EDA300C88323 /* Sources */,
+				E14022A62557EDA300C88323 /* Frameworks */,
+				E14022A72557EDA300C88323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockywidgetExtension;
+			productName = ClockywidgetExtension;
+			productReference = E14022A92557EDA300C88323 /* ClockywidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E140226C2557E79900C88323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E14022732557E79900C88323 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					E14022842557E79A00C88323 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E14022732557E79900C88323;
+					};
+					E140228F2557E79A00C88323 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = E14022732557E79900C88323;
+					};
+					E14022A82557EDA300C88323 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E140226F2557E79900C88323 /* Build configuration list for PBXProject "24h clock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E140226B2557E79900C88323;
+			productRefGroup = E14022752557E79900C88323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E14022732557E79900C88323 /* 24h clock */,
+				E14022842557E79A00C88323 /* 24h clockTests */,
+				E140228F2557E79A00C88323 /* 24h clockUITests */,
+				E14022A82557EDA300C88323 /* ClockywidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E14022722557E79900C88323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E140227F2557E79A00C88323 /* Preview Assets.xcassets in Resources */,
+				E140227C2557E79A00C88323 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022832557E79A00C88323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140228E2557E79A00C88323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022A72557EDA300C88323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E14022702557E79900C88323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14022D12557EE5A00C88323 /* Ticks.swift in Sources */,
+				E14022C72557EE5000C88323 /* ClockView.swift in Sources */,
+				E14022D72557EE6000C88323 /* TickText.swift in Sources */,
+				E14022DD2557EE6500C88323 /* Hand.swift in Sources */,
+				E140227A2557E79900C88323 /* ContentView.swift in Sources */,
+				E14022782557E79900C88323 /* _4h_clockApp.swift in Sources */,
+				E14022EA2557EE7900C88323 /* Date+Angle.swift in Sources */,
+				E14022E32557EE6B00C88323 /* Tickhand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022812557E79A00C88323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E140228A2557E79A00C88323 /* _4h_clockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E140228C2557E79A00C88323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14022952557E79A00C88323 /* _4h_clockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14022A52557EDA300C88323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E14022872557E79A00C88323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14022732557E79900C88323 /* 24h clock */;
+			targetProxy = E14022862557E79A00C88323 /* PBXContainerItemProxy */;
+		};
+		E14022922557E79A00C88323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14022732557E79900C88323 /* 24h clock */;
+			targetProxy = E14022912557E79A00C88323 /* PBXContainerItemProxy */;
+		};
+		E14022B92557EDA500C88323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14022A82557EDA300C88323 /* ClockywidgetExtension */;
+			targetProxy = E14022B82557EDA500C88323 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E14022972557E79A00C88323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E14022982557E79A00C88323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E140229A2557E79A00C88323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"24h clock/Preview Content\"";
+				DEVELOPMENT_TEAM = 5866R9889R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "24h clock/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E140229B2557E79A00C88323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"24h clock/Preview Content\"";
+				DEVELOPMENT_TEAM = 5866R9889R;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "24h clock/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E140229D2557E79A00C88323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = "24h clockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24h clock.app/24h clock";
+			};
+			name = Debug;
+		};
+		E140229E2557E79A00C88323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = "24h clockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/24h clock.app/24h clock";
+			};
+			name = Release;
+		};
+		E14022A02557E79A00C88323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = "24h clockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "24h clock";
+			};
+			name = Debug;
+		};
+		E14022A12557E79A00C88323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = "24h clockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "24h clock";
+			};
+			name = Release;
+		};
+		E14022BC2557EDA500C88323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = Clockywidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clock.Clockywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E14022BD2557EDA500C88323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5866R9889R;
+				INFOPLIST_FILE = Clockywidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.berno.-4h-clock.Clockywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E140226F2557E79900C88323 /* Build configuration list for PBXProject "24h clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14022972557E79A00C88323 /* Debug */,
+				E14022982557E79A00C88323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14022992557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E140229A2557E79A00C88323 /* Debug */,
+				E140229B2557E79A00C88323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E140229C2557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E140229D2557E79A00C88323 /* Debug */,
+				E140229E2557E79A00C88323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E140229F2557E79A00C88323 /* Build configuration list for PBXNativeTarget "24h clockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14022A02557E79A00C88323 /* Debug */,
+				E14022A12557E79A00C88323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14022BB2557EDA500C88323 /* Build configuration list for PBXNativeTarget "ClockywidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14022BC2557EDA500C88323 /* Debug */,
+				E14022BD2557EDA500C88323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E140226C2557E79900C88323 /* Project object */;
+}
